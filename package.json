@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "FullStack Aplication ToDoList for work",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "dev": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run client\" \"npm run dev\""
+  },
+  "author": "Denys Mazuryk",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "sass": "^1.53.0",
+    "ui-kit": "^0.20.10",
+    "uuid": "^8.3.2"
+  }
+}
